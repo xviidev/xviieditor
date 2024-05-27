@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@xviieditor/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -8,19 +8,25 @@
     "./code": "./src/code.tsx"
   },
   "scripts": {
+    "build": "tsc",
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
-    "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
+    "@xviieditor/eslint-config": "*",
+    "@xviieditor/typescript-config": "*",
     "eslint": "^8.57.0",
     "react": "^18.2.0",
+    "ts-lit-plugin": "^2.0.2",
+    "tsup": "^8.0.2",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "tailwind-variants": "^0.2.1"
   }
 }
